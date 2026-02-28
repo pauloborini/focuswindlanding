@@ -508,6 +508,27 @@ nav {
     align-items: center;
 }
 
+.legal-page .legal-hero .section-header p {
+    margin-top: 0.5rem;
+}
+
+.legal-content .legal-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.legal-text h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+}
+
+.legal-text p, .legal-text li {
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
 .footer-legal {
     display: flex;
     gap: 1.5rem;
