@@ -37,6 +37,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    const drawer = document.getElementById('mobile-drawer');
+    const menuButton = document.querySelector('.mobile-menu-btn');
+    const closeButton = drawer ? drawer.querySelector('.drawer-close') : null;
+
+    const setDrawerOpen = (open) => {
+        if (!drawer || !menuButton) return;
+        drawer.classList.toggle('open', open);
+        menuButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+        document.body.classList.toggle('drawer-open', open);
+        const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+        if (open && scrollbarWidth > 0) {
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
+        } else {
+            document.body.style.paddingRight = '';
+        }
+    };
+
+    if (menuButton && drawer) {
+        menuButton.addEventListener('click', () => {
+            const isOpen = drawer.classList.contains('open');
+            setDrawerOpen(!isOpen);
+        });
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener('click', () => setDrawerOpen(false));
+    }
+
+    if (drawer) {
+        drawer.addEventListener('click', (e) => {
+            if (e.target === drawer) {
+                setDrawerOpen(false);
+            }
+        });
+
+        drawer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => setDrawerOpen(false));
+        });
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            setDrawerOpen(false);
+        }
+    });
+
     // Navbar Blur Effect on Scroll
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
