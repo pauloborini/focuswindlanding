@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="page.privacy.title">FocusWind | Política de Privacidade</title>
+    <title data-i18n="page.download.title">FocusWind | Download</title>
     <link rel="icon" type="image/png" href="images/focuswind.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@
                 <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="download.html" class="btn btn-primary" data-i18n="nav.cta">Baixar Agora</a>
+                <a href="#downloads" class="btn btn-primary" data-i18n="nav.cta">Baixar Agora</a>
             </div>
             <button class="mobile-menu-btn" aria-label="Menu" data-i18n="drawer.menu" data-i18n-attr="aria-label" aria-controls="mobile-drawer" aria-expanded="false">
                 <span></span>
@@ -47,24 +47,61 @@
                 <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
             </ul>
             <div class="drawer-actions">
-                <a href="download.html" class="btn btn-primary full-width" data-i18n="drawer.cta">Baixar Agora</a>
+                <a href="#downloads" class="btn btn-primary full-width" data-i18n="drawer.cta">Baixar Agora</a>
             </div>
         </div>
     </div>
 
-    <main class="legal-page">
-        <section class="section legal-hero">
+    <main class="download-page">
+        <section class="section download-hero">
             <div class="container">
                 <div class="section-header fade-up">
-                    <span class="tagline" data-i18n="legal.tagline">Documentação Legal</span>
-                    <h1 data-i18n="legal.privacy.title">Política de Privacidade</h1>
+                    <span class="tagline" data-i18n="download.tagline">Download</span>
+                    <h1 data-i18n="download.title">Baixe o FocusWind</h1>
+                    <p data-i18n="download.subtitle">Escolha sua plataforma e comece agora.</p>
                 </div>
             </div>
         </section>
 
-        <section class="section legal-content">
-            <div class="container legal-text">
-                <div class="markdown-content" data-doc="privacy" data-i18n="legal.loading">Carregando documento...</div>
+        <section id="downloads" class="section download-options">
+            <div class="container">
+                <div class="download-grid">
+                    <div class="download-card">
+                        <div class="download-card-header">
+                            <h3 data-i18n="download.mac.title">macOS</h3>
+                            <span class="download-chip" data-i18n="download.mac.chip">Disponível</span>
+                        </div>
+                        <p data-i18n="download.mac.desc">Versão nativa com modo compacto e foco total.</p>
+                        <a href="downloads/focuswind.dmg" class="btn btn-primary full-width" data-i18n="download.mac.cta">Baixar .dmg</a>
+                    </div>
+
+                    <div class="download-card disabled">
+                        <div class="download-card-header">
+                            <h3 data-i18n="download.win.title">Windows</h3>
+                            <span class="download-chip muted" data-i18n="download.win.chip">Em breve</span>
+                        </div>
+                        <p data-i18n="download.win.desc">Estamos finalizando a versão para Windows.</p>
+                        <button class="btn btn-outline full-width" data-i18n="download.win.cta" disabled>Em desenvolvimento</button>
+                    </div>
+
+                    <div class="download-card disabled">
+                        <div class="download-card-header">
+                            <h3 data-i18n="download.ios.title">iOS</h3>
+                            <span class="download-chip muted" data-i18n="download.ios.chip">Em breve</span>
+                        </div>
+                        <p data-i18n="download.ios.desc">Baixe pela App Store e sincronize com o desktop.</p>
+                        <button class="btn btn-outline full-width" data-i18n="download.ios.cta" disabled>Em breve</button>
+                    </div>
+
+                    <div class="download-card disabled">
+                        <div class="download-card-header">
+                            <h3 data-i18n="download.android.title">Android</h3>
+                            <span class="download-chip muted" data-i18n="download.android.chip">Em breve</span>
+                        </div>
+                        <p data-i18n="download.android.desc">Disponível no Google Play para foco contínuo.</p>
+                        <button class="btn btn-outline full-width" data-i18n="download.android.cta" disabled>Em breve</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

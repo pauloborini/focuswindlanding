@@ -123,6 +123,12 @@ p {
     color: var(--color-primary);
 }
 
+.btn-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 .full-width {
     width: 100%;
 }
@@ -538,6 +544,76 @@ nav {
     box-shadow: 0 0 40px rgba(46, 204, 113, 0.1);
 }
 
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.download-card {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: var(--transition);
+}
+
+.download-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+}
+
+.download-card.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.download-card.disabled:hover {
+    border-color: var(--color-border);
+    box-shadow: none;
+    transform: none;
+}
+
+.download-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.download-card h3 {
+    font-size: 1.4rem;
+    color: var(--color-text);
+}
+
+.download-chip {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(46, 204, 113, 0.12);
+    color: var(--color-primary);
+    border: 1px solid rgba(46, 204, 113, 0.3);
+}
+
+.download-chip.muted {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--color-text-muted);
+    border-color: var(--color-border);
+}
+
+.download-card p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+}
+
 .card-header {
     margin-bottom: 2rem;
     text-align: center;
@@ -673,6 +749,14 @@ nav {
 }
 
 .legal-page .legal-hero {
+    padding-bottom: 2rem;
+}
+
+.download-page .download-hero .section-header {
+    margin-bottom: 1.5rem;
+}
+
+.download-page .download-hero {
     padding-bottom: 2rem;
 }
 
@@ -815,6 +899,10 @@ nav {
     .pricing-card.annual {
         max-width: none;
         justify-self: stretch;
+    }
+
+    .download-grid {
+        grid-template-columns: 1fr;
     }
 
     .feature-grid {
