@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FocusWind | O timer Pomodoro definitivo</title>
+    <title data-i18n="page.title">FocusWind | O timer Pomodoro definitivo</title>
     <link rel="icon" type="image/png" href="images/focuswind.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,15 +18,15 @@
                 <span>FocusWind</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#problem">O Problema</a></li>
-                <li><a href="#features">Recursos</a></li>
-                <li><a href="#pricing">Planos</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#problem" data-i18n="nav.problem">O Problema</a></li>
+                <li><a href="#features" data-i18n="nav.features">Recursos</a></li>
+                <li><a href="#pricing" data-i18n="nav.pricing">Planos</a></li>
+                <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
             </ul>
             <div class="nav-actions">
-                <a href="#pricing" class="btn btn-primary">Baixar Agora</a>
+                <a href="#pricing" class="btn btn-primary" data-i18n="nav.cta">Baixar Agora</a>
             </div>
-            <button class="mobile-menu-btn" aria-label="Menu" aria-controls="mobile-drawer" aria-expanded="false">
+            <button class="mobile-menu-btn" aria-label="Menu" data-i18n="drawer.menu" data-i18n-attr="aria-label" aria-controls="mobile-drawer" aria-expanded="false">
                 <span></span>
                 <span></span>
             </button>
@@ -35,19 +35,19 @@
     <div class="mobile-drawer" id="mobile-drawer">
         <div class="mobile-drawer-panel">
             <div class="drawer-header">
-                <span>Menu</span>
-                <button class="drawer-close" aria-label="Fechar menu">
+                <span data-i18n="drawer.menu">Menu</span>
+                <button class="drawer-close" aria-label="Fechar menu" data-i18n="drawer.close" data-i18n-attr="aria-label">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>
             </div>
             <ul class="drawer-links">
-                <li><a href="#problem">O Problema</a></li>
-                <li><a href="#features">Recursos</a></li>
-                <li><a href="#pricing">Planos</a></li>
-                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#problem" data-i18n="nav.problem">O Problema</a></li>
+                <li><a href="#features" data-i18n="nav.features">Recursos</a></li>
+                <li><a href="#pricing" data-i18n="nav.pricing">Planos</a></li>
+                <li><a href="#faq" data-i18n="nav.faq">FAQ</a></li>
             </ul>
             <div class="drawer-actions">
-                <a href="#pricing" class="btn btn-primary full-width">Baixar Agora</a>
+                <a href="#pricing" class="btn btn-primary full-width" data-i18n="drawer.cta">Baixar Agora</a>
             </div>
         </div>
     </div>
@@ -56,14 +56,14 @@
         <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="container hero-content">
-                <span class="tagline fade-up">Foco inabalável. Produtividade sem distrações.</span>
-                <h1 class="fade-up delay-100">O timer Pomodoro definitivo para profissionais de alta performance.</h1>
+                <span class="tagline fade-up" data-i18n="hero.tagline">Foco inabalável. Produtividade sem distrações.</span>
+                <h1 class="fade-up delay-100" data-i18n="hero.title">O timer Pomodoro definitivo para profissionais de alta performance.</h1>
                 <p class="hero-sub fade-up delay-200">
-                    Uma ferramenta multiplataforma focada no essencial. Sincronização perfeita entre desktop e mobile, desenhada para manter você no estado de fluxo sem as interrupções de interfaces complexas.
+                    <span data-i18n="hero.sub">Uma ferramenta multiplataforma focada no essencial. Sincronização perfeita entre desktop e mobile, desenhada para manter você no estado de fluxo sem as interrupções de interfaces complexas.</span>
                 </p>
                 <div class="cta-group fade-up delay-300">
-                    <a href="#pricing" class="btn btn-primary">Conhecer o Premium</a>
-                    <a href="#pricing" class="btn btn-outline">Baixar Grátis</a>
+                    <a href="#pricing" class="btn btn-primary" data-i18n="hero.cta.primary">Conhecer o Premium</a>
+                    <a href="#pricing" class="btn btn-outline" data-i18n="hero.cta.secondary">Baixar Grátis</a>
                 </div>
             </div>
             <div class="hero-background-glow"></div>
@@ -73,12 +73,12 @@
         <section id="problem" class="section problem">
             <div class="container">
                 <div class="section-header fade-up">
-                    <h2>Recupere o controle sobre as suas horas produtivas.</h2>
+                    <h2 data-i18n="problem.title">Recupere o controle sobre as suas horas produtivas.</h2>
                 </div>
                 <div class="problem-content fade-up delay-100">
                     <div class="problem-text">
-                        <p>A constante troca de contexto e as notificações contínuas fragmentam a atenção. Aplicativos de produtividade convencionais frequentemente adicionam mais ruído do que clareza ao fluxo de trabalho.</p>
-                        <p class="highlight-text">O FocusWind foi construído com base em um princípio simples: a ferramenta não deve competir pela sua atenção.</p>
+                        <p data-i18n="problem.p1">A constante troca de contexto e as notificações contínuas fragmentam a atenção. Aplicativos de produtividade convencionais frequentemente adicionam mais ruído do que clareza ao fluxo de trabalho.</p>
+                        <p class="highlight-text" data-i18n="problem.p2">O FocusWind foi construído com base em um princípio simples: a ferramenta não deve competir pela sua atenção.</p>
                     </div>
                 </div>
             </div>
@@ -88,8 +88,8 @@
         <section id="features" class="section features">
             <div class="container">
                 <div class="section-header fade-up">
-                    <h2>Desenvolvido para sustentar o seu estado de Flow.</h2>
-                    <p>Uma interface minimalista que fornece exatamente o que você precisa.</p>
+                    <h2 data-i18n="features.title">Desenvolvido para sustentar o seu estado de Flow.</h2>
+                    <p data-i18n="features.subtitle">Uma interface minimalista que fornece exatamente o que você precisa.</p>
                 </div>
                 
                 <div class="feature-grid">
@@ -97,36 +97,36 @@
                         <div class="icon-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                         </div>
-                        <h3>Metodologia Integrada</h3>
-                        <p>Ciclos de trabalho baseados em períodos de foco intenso e descansos estratégicos, otimizando a energia mental.</p>
+                        <h3 data-i18n="feature.1.title">Metodologia Integrada</h3>
+                        <p data-i18n="feature.1.desc">Ciclos de trabalho baseados em períodos de foco intenso e descansos estratégicos, otimizando a energia mental.</p>
                     </div>
                     <div class="feature-card fade-up delay-100">
                         <div class="icon-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
                         </div>
-                        <h3>Desempenho</h3>
-                        <p>Histórico detalhado e estatísticas de progresso diário diretamente na tela inicial para controle de metas.</p>
+                        <h3 data-i18n="feature.2.title">Desempenho</h3>
+                        <p data-i18n="feature.2.desc">Histórico detalhado e estatísticas de progresso diário diretamente na tela inicial para controle de metas.</p>
                     </div>
                     <div class="feature-card fade-up delay-200">
                         <div class="icon-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
                         </div>
-                        <h3>Modo Standby <span class="badge">Premium</span></h3>
-                        <p>Interface de tela cheia no mobile que bloqueia distrações e força a manutenção do foco.</p>
+                        <h3><span data-i18n="feature.3.title">Modo Standby</span> <span class="badge" data-i18n="badge.premium">Premium</span></h3>
+                        <p data-i18n="feature.3.desc">Interface de tela cheia no mobile que bloqueia distrações e força a manutenção do foco.</p>
                     </div>
                     <div class="feature-card fade-up delay-300">
                         <div class="icon-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
                         </div>
-                        <h3>Modo Compacto <span class="badge">Premium</span></h3>
-                        <p>Mini-timer flutuante e discreto para desktop. Monitore seu tempo sem alterar janelas.</p>
+                        <h3><span data-i18n="feature.4.title">Modo Compacto</span> <span class="badge" data-i18n="badge.premium">Premium</span></h3>
+                        <p data-i18n="feature.4.desc">Mini-timer flutuante e discreto para desktop. Monitore seu tempo sem alterar janelas.</p>
                     </div>
                     <div class="feature-card fade-up delay-400 feature-wide">
                         <div class="icon-box">
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"></path></svg>
                         </div>
-                        <h3>Sincronização em Tempo Real <span class="badge">Premium</span></h3>
-                        <p>Inicie um ciclo no computador e acompanhe pelo celular. Experiência contínua em todos os dispositivos.</p>
+                        <h3><span data-i18n="feature.5.title">Sincronização em Tempo Real</span> <span class="badge" data-i18n="badge.premium">Premium</span></h3>
+                        <p data-i18n="feature.5.desc">Inicie um ciclo no computador e acompanhe pelo celular. Experiência contínua em todos os dispositivos.</p>
                     </div>
                 </div>
             </div>
@@ -136,57 +136,57 @@
         <section id="pricing" class="section pricing">
             <div class="container">
                 <div class="section-header fade-up">
-                    <h2>Alta performance com um modelo justo.</h2>
-                    <p>Estrutura de custos pensada para garantir o desenvolvimento contínuo.</p>
+                    <h2 data-i18n="pricing.title">Alta performance com um modelo justo.</h2>
+                    <p data-i18n="pricing.subtitle">Estrutura de custos pensada para garantir o desenvolvimento contínuo.</p>
                 </div>
 
                 <div class="pricing-grid">
                     <!-- Free Plan -->
                     <div class="pricing-card fade-up">
                         <div class="card-header">
-                            <h3>Focuswind Free</h3>
-                            <p>Para estabelecer os primeiros hábitos.</p>
-                            <div class="price">Grátis</div>
+                            <h3 data-i18n="plan.free.title">Focuswind Free</h3>
+                            <p data-i18n="plan.free.subtitle">Para estabelecer os primeiros hábitos.</p>
+                            <div class="price" data-i18n="plan.free.price">Grátis</div>
                         </div>
                         <ul class="features-list">
-                            <li>Timer Pomodoro Completo</li>
-                            <li>Resumo Diário de Produtividade</li>
-                            <li>Acesso em 1 dispositivo</li>
+                            <li data-i18n="plan.free.feature1">Timer Pomodoro Completo</li>
+                            <li data-i18n="plan.free.feature2">Resumo Diário de Produtividade</li>
+                            <li data-i18n="plan.free.feature3">Acesso em 1 dispositivo</li>
                         </ul>
-                        <a href="#" class="btn btn-outline full-width">Iniciar Grátis</a>
+                        <a href="#" class="btn btn-outline full-width" data-i18n="plan.free.cta">Iniciar Grátis</a>
                     </div>
 
                     <!-- Premium Plan -->
                     <div class="pricing-card premium fade-up delay-100">
                         <div class="card-header">
-                            <h3>Focuswind Premium</h3>
-                            <p>Para quem exige o máximo do fluxo.</p>
-                            <div class="price">R$ 7,90 <span class="period">/ mês</span></div>
+                            <h3 data-i18n="plan.premium.title">Focuswind Premium</h3>
+                            <p data-i18n="plan.premium.subtitle">Para quem exige o máximo do fluxo.</p>
+                            <div class="price" data-i18n="plan.premium.price">R$ 7,90 / mês</div>
                         </div>
                         <ul class="features-list">
-                            <li>Todas as funcionalidades Free</li>
-                            <li>Sincronização na nuvem</li>
-                            <li><strong>Modo Compacto (Desktop)</strong></li>
-                            <li><strong>Modo Standby (Mobile)</strong></li>
-                            <li>Histórico completo</li>
+                            <li data-i18n="plan.premium.feature1">Todas as funcionalidades Free</li>
+                            <li data-i18n="plan.premium.feature2">Sincronização na nuvem</li>
+                            <li><strong data-i18n="plan.premium.feature3">Modo Compacto (Desktop)</strong></li>
+                            <li><strong data-i18n="plan.premium.feature4">Modo Standby (Mobile)</strong></li>
+                            <li data-i18n="plan.premium.feature5">Histórico completo</li>
                         </ul>
-                        <a href="#" class="btn btn-primary full-width">Assinar Premium</a>
+                        <a href="#" class="btn btn-primary full-width" data-i18n="plan.premium.cta">Assinar Premium</a>
                     </div>
 
                     <div class="pricing-card annual fade-up delay-200">
                         <div class="card-header">
-                            <h3>Focuswind Premium Anual</h3>
-                            <p>Economia máxima em um único pagamento.</p>
-                            <div class="price">R$ 79,90 <span class="period">/ ano</span></div>
+                            <h3 data-i18n="plan.annual.title">Focuswind Premium Anual</h3>
+                            <p data-i18n="plan.annual.subtitle">Economia máxima em um único pagamento.</p>
+                            <div class="price" data-i18n="plan.annual.price">R$ 79,90 / ano</div>
                         </div>
                         <ul class="features-list">
-                            <li>Todas as funcionalidades Free</li>
-                            <li>Sincronização na nuvem</li>
-                            <li><strong>Modo Compacto (Desktop)</strong></li>
-                            <li><strong>Modo Standby (Mobile)</strong></li>
-                            <li>Histórico completo</li>
+                            <li data-i18n="plan.annual.feature1">Todas as funcionalidades Free</li>
+                            <li data-i18n="plan.annual.feature2">Sincronização na nuvem</li>
+                            <li><strong data-i18n="plan.annual.feature3">Modo Compacto (Desktop)</strong></li>
+                            <li><strong data-i18n="plan.annual.feature4">Modo Standby (Mobile)</strong></li>
+                            <li data-i18n="plan.annual.feature5">Histórico completo</li>
                         </ul>
-                        <a href="#" class="btn btn-outline full-width">Assinar Anual</a>
+                        <a href="#" class="btn btn-outline full-width" data-i18n="plan.annual.cta">Assinar Anual</a>
                     </div>
                 </div>
             </div>
@@ -196,40 +196,40 @@
         <section id="faq" class="section faq">
             <div class="container">
                 <div class="section-header fade-up">
-                    <h2>Perguntas Frequentes</h2>
+                    <h2 data-i18n="faq.title">Perguntas Frequentes</h2>
                 </div>
                 <div class="faq-list">
                     <div class="faq-item fade-up">
                         <button class="faq-question">
-                            Existe algum período de fidelidade na assinatura?
+                            <span data-i18n="faq.q1">Existe algum período de fidelidade na assinatura?</span>
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                             </span>
                         </button>
                         <div class="faq-answer">
-                            <p>Não. A assinatura do plano Premium é gerenciada de forma centralizada pelo nosso portal web seguro, permitindo o cancelamento a qualquer momento sem processos burocráticos.</p>
+                            <p data-i18n="faq.a1">Não. A assinatura do plano Premium é gerenciada de forma centralizada pelo nosso portal web seguro, permitindo o cancelamento a qualquer momento sem processos burocráticos.</p>
                         </div>
                     </div>
                     <div class="faq-item fade-up delay-100">
                         <button class="faq-question">
-                            O aplicativo requer conexão constante com a internet?
+                            <span data-i18n="faq.q2">O aplicativo requer conexão constante com a internet?</span>
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                             </span>
                         </button>
                         <div class="faq-answer">
-                            <p>Apenas para a sincronização de dados. O controle de ciclos e a utilização do timer Pomodoro funcionam nativamente offline, atualizando seu histórico assim que a conexão for reestabelecida.</p>
+                            <p data-i18n="faq.a2">Apenas para a sincronização de dados. O controle de ciclos e a utilização do timer Pomodoro funcionam nativamente offline, atualizando seu histórico assim que a conexão for reestabelecida.</p>
                         </div>
                     </div>
                     <div class="faq-item fade-up delay-200">
                         <button class="faq-question">
-                            Em quais plataformas o Focuswind está disponível?
+                            <span data-i18n="faq.q3">Em quais plataformas o Focuswind está disponível?</span>
                             <span class="icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
                             </span>
                         </button>
                         <div class="faq-answer">
-                            <p>Atualmente, oferecemos suporte nativo e otimizado para o ecossistema macOS, iOS e Android.</p>
+                            <p data-i18n="faq.a3">Atualmente, oferecemos suporte nativo e otimizado para o ecossistema macOS, iOS e Android.</p>
                         </div>
                     </div>
                 </div>
@@ -240,8 +240,8 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-cta fade-up">
-                <h2>Eleve o padrão do seu fluxo de trabalho.</h2>
-                <p>Pare de utilizar ferramentas que competem pela sua atenção.</p>
+                <h2 data-i18n="footer.title">Eleve o padrão do seu fluxo de trabalho.</h2>
+                <p data-i18n="footer.subtitle">Pare de utilizar ferramentas que competem pela sua atenção.</p>
                 <div class="app-buttons">
                     <button class="btn btn-small">App Store</button>
                     <button class="btn btn-small">Google Play</button>
@@ -249,17 +249,24 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 FocusWind. Todos os direitos reservados.</p>
+                <p data-i18n="footer.rights">&copy; 2026 FocusWind. Todos os direitos reservados.</p>
                 <div class="footer-legal">
                     <!-- <span class="legal-title">Legal</span> -->
                     <div class="legal-links">
-                        <a href="termos-de-uso.html">Termos de Uso</a>
-                        <a href="politica-de-privacidade.html">Política de Privacidade</a>
+                        <a href="termos-de-uso.html" data-i18n="footer.terms">Termos de Uso</a>
+                        <a href="politica-de-privacidade.html" data-i18n="footer.privacy">Política de Privacidade</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="lang-float">
+        <div class="lang-switch" role="group" aria-label="Idioma" data-i18n="lang.label" data-i18n-attr="aria-label">
+            <button class="lang-btn" data-lang="pt">PT</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
